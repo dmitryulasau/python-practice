@@ -17,8 +17,34 @@
 
 # -------------------------------------------
 
-n = int(input("Введите число: "))
-for i in range(0, (n + 1) // 2):
-    odd = 2 * i + 1
-    print(f"{odd} ** 2 = {odd ** 2}")
+# n = int(input("Введите число: "))
+# for i in range(0, (n + 1) // 2):
+#     odd = 2 * i + 1
+#     print(f"{odd} ** 2 = {odd ** 2}")
     
+# -------------------------------------------
+# number = int(input("Введите число: "))
+# for i in range(1, number + 1, 2):
+#     print(f"{i} ** 3 = {i ** 3}")
+
+# -------------------------------------------
+
+# number = int(input("Введите число: "))
+# result = 0
+# for i in range(1, number + 1, 5):
+#     print(f"Номер стула: {i}")
+#     result += i
+# print(f"Сумма: {result}")
+
+# -------------------------------------------
+wake_up = int(input("Во сколько проснулся Саша? "))
+water = 0
+calories = 0
+for i in range(wake_up, 23, 3):
+    print(f"{i}-й час")
+    water += 1
+    cal = int(input("Сколько съедено калорий: "))
+    calories += cal
+print("Перед сном итог")
+print(f"Всего калорий: {calories}")
+print(f"Всего литров воды: {water}")
