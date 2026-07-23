@@ -1,4 +1,4 @@
-n = int(input("Сколько всего карточек? "))
+n = int(input("Введите количество карточек: "))
 cards_total = 0
 for card in range(1, n + 1):
     cards_total += card

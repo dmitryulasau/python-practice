@@ -70,7 +70,29 @@
 
 # -------------------------------------------
 
-seconds = int(input("Сколько секунд считать: "))
-for i in range(seconds - (seconds % 2), 1, -2):   
-    print(i)
-print("Я иду искать!")
+# seconds = int(input("Сколько секунд считать: "))
+# for i in range(seconds - (seconds % 2), 0, -2):   
+#     print(i)
+# print("Я иду искать!")
+
+# -------------------------------------------
+
+start = 14
+end = 9
+step = 1
+
+if start < end and step < 1:
+    temp = end
+    end = start
+    start = temp
+elif start > end and step >= 1:
+    temp = start
+    start = end
+    end = temp
+
+print(start)
+print(end)
+
+for i in range(start, end - 1, step):
+    result = (i ** 3) + (2 * i ** 2) - (4 * i) + 1
+    print(f"В точке {i} функция равна {result}")

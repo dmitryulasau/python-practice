@@ -138,4 +138,4 @@ while balance < 10000:
         print("Вы проиграли всё!")
         break
 print("Игра закончена.")
-print("Итого осталось: ", balance, "рублей")
+print(f"Итого осталось: {balance} рублей")

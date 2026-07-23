@@ -62,14 +62,14 @@
 # Хотите продолжить сбор данных? 1 — да, 0 — нет: 0
 # Сбор данных остановлен.
 
-teperature_data = -999
+temperature_data = -999
 errors = 0
 while True:
     current_temperature = int(input("Какая температура на датчике? "))
-    if current_temperature != teperature_data:
-        teperature_data = current_temperature
+    if current_temperature != temperature_data:
+        temperature_data = current_temperature
     else:
-        print(f"Внимание: дублирующее значение температуры {teperature_data} обнаружено!")
+        print(f"Внимание: дублирующее значение температуры {temperature_data} обнаружено!")
         errors += 1
         print(f"Зафиксировано сбоев датчика: {errors}")
         action = int(input("Хотите продолжить сбор данных? 1 — да, 0 — нет: "))
