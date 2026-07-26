@@ -68,9 +68,48 @@
 
 # -----------------------------------------------------
 
-number = int(input("Введите число: ")) 
-print("-=-", end="") 
-for i in range(0, number + 1, 10): 
-    print(i, end="-=-")
-print()
+# number = int(input("Введите число: ")) 
+# print("-=-", end="") 
+# for i in range(0, number + 1, 10): 
+#     print(i, end="-=-")
+# print()
     
+
+#------------- PALINDROME ---------------
+
+# text = input("Что написано в свитке? ")
+# new_text = ""
+# for symbol in text:
+#     new_text = symbol + new_text
+
+# if new_text == text:
+#     print("Да, это палиндром!")
+# else:
+#     print("Нет, это не палиндром!")
+# print(new_text)
+
+
+#          1   3   5   7   8   6   4   2
+# Слово: | s | a | n | d | w | i | c | h |
+# Шифр:  | s | h | a | c | n | i | d | w |
+#          1   2   3   4   5   6   7   8
+
+# text = "Введите кодовое слово: " #shacnidw
+odd_letters = ""
+even_letters = ""
+symbol_count = 0
+
+for symbol in "shacnidw":
+    symbol_count += 1
+
+    if symbol_count % 2 == 0:
+        even_letters = symbol + even_letters
+    else:
+        odd_letters += symbol
+
+result = odd_letters + even_letters
+print(result)
+
+
+
+
