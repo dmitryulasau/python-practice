@@ -81,13 +81,45 @@
 #     print()
 
 #------------------ MATRIX -----------------------
+# size = 5
+# for row in range(size):
+#     for col in range(size):
+#         if row + col == size - 1:
+#             print(1, end=" ")
+#         elif row + col > size - 1:
+#             print(2, end=" ")
+#         else:
+#             print(0, end=" ")
+#     print()
+
+#------------------ QUEUE -----------------------
+# number = int(input("Сколько людей в очереди: "))
+# for hour in range(number):
+#     print(f"*** {hour} час ***")
+#     for i in range(hour, number):
+#         print(f"Номер в очереди: {i}")
+#     print()
+# print("Очередь обслужена!")
+
+#------------------ SEQ -------------------------
+
+# number = int(input("Количество чисел в последовательности: "))
+# result = 0
+
+# while number > 0:
+#     user_number = int(input("Введите число: "))
+#     if user_number > 5:
+#         result += 1
+#     number -= 1
+# print(f"Результат: {result}")
+
+#------------------ LADDER -------------------------
+# size = int(input("Введите размер матрицы: "))
 size = 5
-for row in range(size):
-    for col in range(size):
-        if row + col == size - 1:
-            print(1, end=" ")
-        elif row + col > size - 1:
-            print(2, end=" ")
-        else:
-            print(0, end=" ")
+for row in range(size + 1):
+    for col in range(row, size + 1):
+        print(col, end=" ")
+
+
+        
     print()
