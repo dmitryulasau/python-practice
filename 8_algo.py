@@ -77,21 +77,29 @@
 
 # -------------------------------------------
 
+#Расскомментируйте строки ниже, чтобы отправить код на "Выполнить" и закомментируйте назад перед отправкой на "Проверить". Автотест сам подставит эти переменные.
+
+start = -2
+end = 2
+step = -1
+
 start = 14
 end = 9
 step = 1
 
-if start < end and step < 1:
-    temp = end
-    end = start
-    start = temp
-elif start > end and step >= 1:
+start = 0 
+end = 9 
+step = 2 
+
+temp = 0
+
+if (step > 0 and start > end) or (step < 0 and start < end):
+    step *= -1
+elif start < end and step > 0:
     temp = start
     start = end
     end = temp
-
-print(start)
-print(end)
+    step *= -1
 
 for i in range(start, end - 1, step):
     result = (i ** 3) + (2 * i ** 2) - (4 * i) + 1

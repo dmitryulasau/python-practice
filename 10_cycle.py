@@ -119,7 +119,4 @@ size = 5
 for row in range(size + 1):
     for col in range(row, size + 1):
         print(col, end=" ")
-
-
-        
     print()
