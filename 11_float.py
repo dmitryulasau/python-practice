@@ -21,6 +21,8 @@ height = float(input("Введите рост: "))
 
 bmi = round(weight / (height ** 2), 2)
 
+print(f"Индекс массы тела: {bmi}")
+
 if bmi < 18.5:
     print("У вас недобор")
 elif bmi < 25:
