@@ -1,0 +1,55 @@
+body {
+    background-color: #c0a891
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #5C4033;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #6F4E37;
+    border-radius: 20px;
+    width: 300px;
+    
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #774e32;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#description {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 3px solid #b7825f;
+    border-radius: 20px 0 20px 0;
+    
+}
+
+.ingredients-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #b6977d;
+    border-radius: 20px 0 20px 0;
+}
+
+.ingredients-section li {
+    color: #475c6c;
+}
+
+#more-recipes ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #5C4033;
+}
